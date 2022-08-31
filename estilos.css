@@ -1,0 +1,14 @@
+@media only screen and (min-width: 0px)  and (max-width: 768px) {
+    .homex{
+      display: none;
+    }
+    }
+    
+@media only screen and (min-width: 769px)  and (max-width: 2900px) {
+      .homemini{
+        display: none;
+      }
+      .intro{
+        height: 50vh;
+      }
+    }
