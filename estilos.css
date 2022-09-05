@@ -2,7 +2,15 @@
     .homex{
       display: none;
     }
+    .about{
+      text-align: center;
     }
+    .aboutme{
+      display: none;
+    }   
+
+  
+  }
     
 @media only screen and (min-width: 769px)  and (max-width: 2900px) {
       .homemini{
@@ -11,4 +19,39 @@
       .intro{
         height: 50vh;
       }
+      .aboutmini{
+        display: none;
+      }
+      .cuadro{
+        height: 500px;
+        width: 650px;
+      }
+      .cuadro2{
+        height: 350px;
+        width: 350px;
+        margin-top: 250px;
+        background: RGBA(90, 103, 216, 0.8);
+        
+      }
+      .about{
+        text-align: center;
+        display: none;
+      }
+      .titulo-about{
+        height: 100%;
+        width: 100%;
+      }
+      .cuadro3{
+        height: 50px;
+        width: 550px;
+        margin-top: 250px;
+        background: RGBA(90, 103, 216, 0.8);
+      }
+      .cuadro4{
+        height: 75px;
+        width: 600px;
+      }
+
+ 
+
     }

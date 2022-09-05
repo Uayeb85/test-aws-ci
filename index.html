@@ -7,29 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="estilos.css">
 
-    <title>TEST</title>
+    <title>Gustavo Arciniega</title>
 </head>
 <body>
         <header class="bg-gray-100 sm:flex sm:justify-end sm:items-end">
             <div class="flex items-center justify-end px-4 py-4 ">
               <div class="sm:hidden">
-                <button @click="isOpen = !isOpen"  type="button" class=" block text-indigo-600 focus:text-indigo-600 focus:outline-none hover:text-indigo-800">
-                  <svg class="h-6 w-6 fill-current"  viewBox="0 0 510 510">
-                    <path v-if="isOpen" fill-rule="evenodd" d="M505.922,476.567L285.355,256L505.92,35.435c8.106-8.105,8.106-21.248,0-29.354c-8.105-8.106-21.248-8.106-29.354,0L256.001,226.646L35.434,6.081c-8.105-8.106-21.248-8.106-29.354,0c-8.106,8.105-8.106,21.248,0,29.354L226.646,256L6.08,476.567c-8.106,8.106-8.106,21.248,0,29.354c8.105,8.105,21.248,8.106,29.354,0l220.567-220.567l220.567,220.567c8.105,8.105,21.248,8.106,29.354,0S514.028,484.673,505.922,476.567z"/>
-                    <path v-if="!isOpen" fill-rule="evenodd" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667C514.096,145.416,514.096,131.933,505.755,123.592z"/>
-                  </svg>
-                </button>
               </div>
             </div>
-              <div :class="isOpen ? 'block' : 'hidden'" class="px-4 pt-2 pb-4 sm:flex"  >
-                <a href="#home" class="mt-1 block px-2 py-1 text-indigo-700 font-semibold rounded hover:bg-gray-300 sm:mt-0 sm:ml-2">Home</a>      
-                <a href="#about" class="mt-1 block px-2 py-1 text-indigo-700 font-semibold rounded hover:bg-gray-300 sm:mt-0 sm:ml-2">About</a>
-                <a href="#work" class="mt-1 block px-2 py-1 text-indigo-700 font-semibold rounded hover:bg-gray-300 sm:mt-0 sm:ml-2" >Projects</a>
-                <a href="#footer" class="mt-1 block px-2 py-1 text-indigo-700 font-semibold rounded hover:bg-gray-300 sm:mt-0 sm:ml-2">Contact</a>
+              <div  class="px-4 pt-2 pb-4 flex items-center justify-center"  >
+                <a href="#home" class="mt-1  px-2 py-1 text-indigo-700 font-semibold rounded hover:bg-gray-300 sm:mt-0 sm:ml-2">Home</a>      
+                <a href="#about" class="mt-1  px-2 py-1 text-indigo-700 font-semibold rounded hover:bg-gray-300 sm:mt-0 sm:ml-2">About</a>
+                <a href="#work" class="mt-1  px-2 py-1 text-indigo-700 font-semibold rounded hover:bg-gray-300 sm:mt-0 sm:ml-2" >Experience</a>
+                <a href="#footer" class="mt-1 px-2 py-1 text-indigo-700 font-semibold rounded hover:bg-gray-300 sm:mt-0 sm:ml-2">Contact</a>
               </div> 
           </header>
-    <h2 class="text-3xl">Numero de visitantes</h2>
-    <h1 id="count">0</h1>
+
+  
 
     <div class="bg-gray-100 pt-5 " id="home"> 
         <div class="homemini">
@@ -52,6 +46,185 @@
         </div>
   
       </div>
+
+      <section>
+        <div class="bg-gray-100" id="about">
+          <div class="pt-10 bg-indigo-500 aboutmini">
+            <h3 class="text-gray-100 font-extrabold text-3xl md:text-6xl about pt-5">About me</h3>
+            <h4 class="mt-6 text-justify p-4 text-gray-200 font-semibold">
+              Hello, I am Gus, i'm committed professional with more than 15 years of experience selling,
+              designing and implementing projects. Expertise in consulting and pre-sales for the development
+              of efficient IT architecture services for Telco companies. Experience operating cloud environments,
+              containers, SaaS and infrastructure as code. Careful listener and problem solver, positive leader
+              with effective team management. Author, communicator, public speaker and technology
+              evangelist. Fluent in Spanish, English and French. 
+    
+            </h4>
+          </div>
+    
+    
+          <div class="flex aboutme"  >
+            <div class="cuadro2 absolute"></div>
+            <div class="cuadro bg-green-300"></div>
+            <div class="flex  flex-col items-center titulo-about">
+              <h3 class="text-indigo-500 font-extrabold text-2xl md:text-6xl mt-10">About me</h3>
+              <h4 class="mt-6 text- justify px-24 pt-16 text-indigo-600 font-semibold text-2xl">
+            Hello, I am Gus, i'm committed professional with more than 15 years of experience selling,
+            designing and implementing projects. Expertise in consulting and pre-sales for the development
+            of efficient IT architecture services for Telco companies. Experience operating cloud environments,
+            containers, SaaS and infrastructure as code. Careful listener and problem solver, positive leader
+            with effective team management. Author, communicator, public speaker and technology
+            evangelist. Fluent in Spanish, English and French.  
+              </h4>
+    
+    
+            </div>
+    
+    
+          </div>
+    
+    
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font overflow-hidden bg-gray-100" id="work">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="-my-8 divide-y-2 divide-gray-100">
+              <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                 <a href="https://www.trustarc.com"><span class="font-semibold title-font text-indigo-700 text-2xl">TrustArc Canada Inc <span class="text-xl"> (Canada)</span></span></a> 
+                  <span class="text-1xl text-gray-900">Solutions Engineer</span>
+                  <span class="mt-1 text-gray-500 text-sm">2022</span>
+                </div>
+                <div class="md:flex-grow">
+                    <ul class="leading-relaxed">
+                      <li> <span class="text-indigo-500"> ●</span>  Prepare and deliver technical presentations explaining products or services to customers
+                            and prospective customers.</li>
+                      <li> <span class="text-indigo-500"> ●</span>In charge of helping customers solve problems and create a DEMO, POC. </li>
+                      <li> <span class="text-indigo-500"> ●</span>Collaborate with sales teams to understand customer requirements and provide sales
+                            support </li>
+                      <li> <span class="text-indigo-500"> ●</span>Responsible for creating technical business documentation such as workflow diagrams,
+                            proposals, SOWs, RFPs and RFIs, etc. </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <a href="https://www.ditcanada.com/"><span class="font-semibold title-font text-indigo-700 text-2xl">DIT Web Solutions <span class="text-xl"> (Canada)</span></span></a> 
+                  <span class="text-1xl text-gray-900">Sales Representative</span>
+
+                  <span class="mt-1 text-gray-500 text-sm">2021 - 2022</span>
+                </div>
+                <div class="md:flex-grow">
+                  <ul class="leading-relaxed">
+                    <li> <span class="text-indigo-500"> ●</span> In charge of software and technology, pre-sales and sales.</li>
+                    <li> <span class="text-indigo-500"> ●</span>In charge of client follow up and customers satisfaction. </li>
+                    <li> <span class="text-indigo-500"> ●</span>Responsible for ensuring success on the projects' implementation.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <a href="http://regucom.com.mx/"><span class="font-semibold title-font text-indigo-700 text-2xl">Regucom <br> <span class="text-xl"> (Mexico)</span></span></a> 
+                  <span class="text-1xl text-gray-900">Solutions Sales Engineer</span>
+
+                  <span class="mt-1 text-gray-500 text-sm">2014 - 2021</span>
+                </div>
+                <div class="md:flex-grow">
+                  <ul class="leading-relaxed">
+                    <li> <span class="text-indigo-500"> ●</span> Responsible for commercial expansion in Central and South America.</li>
+                    <li> <span class="text-indigo-500"> ●</span> Training for clients in the use of tools such as OTDR, Fusion Splicer, PON Meters, etc. </li>
+                    <li> <span class="text-indigo-500"> ●</span> Responsible for conducting demos, workshops and POC.</li>
+                    <li> <span class="text-indigo-500"> ●</span> Advise clients in the selection of the most optimal network architecture.</li>
+                    <li> <span class="text-indigo-500"> ●</span> In charge of Providing technical support physically or remotely in applications, software and IT services.</li>
+                    <li> <span class="text-indigo-500"> ●</span> Help the purchasing department in the decision to purchase new products or services</li>
+
+
+                  </ul>
+                </div>
+              </div>
+              <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <a href="https://concable.com.mx/"><span class="font-semibold title-font text-indigo-700 text-2xl">Concable TV <br> <span class="text-xl"> (Mexico)</span></span></a> 
+                  <span class="text-1xl text-gray-900">Technical Manager</span>
+
+                  <span class="mt-1 text-gray-500 text-sm">2007 - 2014</span>
+                </div>
+                <div class="md:flex-grow">
+                  <ul class="leading-relaxed">
+                    <li> <span class="text-indigo-500"> ●</span> Responsible for the Network Operations Center.</li>
+                    <li> <span class="text-indigo-500"> ●</span>Conducted the administration and management of the internet network. </li>
+                    <li> <span class="text-indigo-500"> ●</span> In charge of coordinating the IT department.</li>
+                    <li> <span class="text-indigo-500"> ●</span> Supervise the preventive maintenance of the entire network infrastructure.</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="text-gray-600 body-font bg-gray-100">
+        <div class="container px-5 py-10 mx-auto">
+          <p class="text-center mb-10 text-3xl text-indigo-500 font-bold">Education</p>
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <p class="text-gray-900 text-lg title-font font-medium mb-2">B.Sc. Degree in Audio Engineering</p>
+              <p class="leading-relaxed text-base text-indigo-500">Gmartell, Mexico City.</p>
+            </div>
+          </div>
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <p class="text-gray-900 text-lg title-font font-medium mb-2">Professional en coding/JavaScript</p>
+              <p class="leading-relaxed text-base text-indigo-500">DevF.La, Mexico City.</p>
+            </div>
+          </div>
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+             <a href="https://www.credly.com/badges/bc592fa4-4ef0-478c-aea2-b86d3e8ba0dc/email"> <p class="text-gray-900 text-lg title-font font-medium mb-2 hover:text-indigo-500">AWS Certified Cloud Practitioner</p> </a> 
+             <a href="https://www.credly.com/badges/d8d8e8b8-2c3c-4a63-a0bf-31bd72981830/public_url"> <h2 class="text-gray-900 text-lg title-font font-medium mb-2 hover:text-indigo-500">AWS Certified Solutions Architect Associate</h2> </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="bg-indigo-500 rounded-lg m-1" id="footer">
+          <div>
+            <div class="pt-20 pl-20">
+              <p class="text-gray-100 text-6xl font-bold" >I Am Gus</p>
+              <p class="text-gray-100 text-xl ">Contact me at: <span class="font-bold"> <a href="mailto:hello@iamuayeb.com">hi@iamgus.cloud </a>  </span>  </p>
+           </div> 
+           <div class="pt-5 pl-20 flex items-center">
+              <a href="https://medium.com/@gustavo.regucom06" class=""> 
+                <img src="assets/medium-iamGus.svg" alt="" class="h-8 w-8 mr-5">
+              </a>
+              <a href="https://twitter.com/uayeb"> 
+                <img src="assets/twitter-iamGus.svg" alt="" class="h-8 w-8 mr-5">
+              </a>
+              <a href="https://www.linkedin.com/in/gustavo-arciniega-alonso/"> 
+                <img src="assets/linkedin-iamGus.svg" alt="" class="h-8 w-8 mr-5">
+              </a>
+              <a href="https://github.com/Uayeb85"> 
+                <img src="assets/github.png" alt="" class="h-8 w-8 mr-5">
+              </a>
+           </div>
+           <div class="foot md:flex md:flex-col md:items-end md:pr-20 pb-20">
+            <p class="text-gray-100 text-lg md:text-xl" >Numero de visitantes <span id="count"> 0 </span> </p>
+             <p class="text-gray-100 text-lg md:text-xl"> Made with <span> 
+               <i class="fa fa-heart" aria-hidden="true"></i> </span> love in
+               <span> <a href="https://en.wikipedia.org/wiki/Mexico_City" class="hover:bg-gray-900 font-semibold cursor-pointer">  CDMX  </a> </span> 
+             </p>  
+             <p class="text-gray-100  text-lg md:text-xl">2022</p>
+           </div>
+    
+          </div>
+    
+    
+    
+        </div>     
+      </footer>
 </body>
 
 <script src="logic.js"></script>
